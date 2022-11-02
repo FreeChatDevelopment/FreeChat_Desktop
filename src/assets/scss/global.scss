@@ -1,0 +1,51 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+p,
+i,
+span,
+em,
+header,
+footer,
+img,
+input,
+textarea,
+select,
+button,
+menu {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  font-style: normal;
+  outline: none;
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: text-top;
+}
+
+button,
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: none;
+}
+
+#root {
+  position: relative;
+}
