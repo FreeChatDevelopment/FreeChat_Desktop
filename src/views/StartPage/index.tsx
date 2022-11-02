@@ -1,22 +1,19 @@
 /**
  * 启动页
  */
-import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
 import './index.scss'
-export default function startPage() {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
-  const navigate = useNavigate()
+export default function StartPage() {
+  const Navigate = useNavigate()
   const goBack = (path: string) => {
-    navigate(`${path}`)
+    Navigate(`${path}`)
   }
-  console.log(useNavigate, '1')
   return (
     <>
       <div className="start-page">
-        启动页
-        <button onClick={() => goBack('index')}>登录</button>
+        <img src={require('../../assets/images/startLogo.png')} alt="" />
+        <button onClick={() => goBack('login')}>登录</button>
       </div>
     </>
   )

@@ -14,6 +14,11 @@ const Router: Items[] = [
     element: lazy(() => import('../views/StartPage'))
   },
   {
+    path: '/login',
+    title: '登录',
+    element: lazy(() => import('../views/Login'))
+  },
+  {
     path: '/index',
     title: 'index',
     element: lazy(() => import('../views/Index'))
