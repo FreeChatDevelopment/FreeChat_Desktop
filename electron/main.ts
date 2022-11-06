@@ -8,10 +8,10 @@ class Main {
 
   public init() {
     app.whenReady().then(() => {
-      ipcMain.on('set-title', this.handleSetTitle)
+      ipcMain.on('set-title', this.handleSetTitle.bind(this))
     }).then(() => this.createWindow())
-    app.on('window-all-closed', this.onWindowAllClosed);
-    app.on('activate', this.onActivate);
+    app.on('window-all-closed', this.onWindowAllClosed.bind(this));
+    app.on('activate', this.onActivate.bind(this));
   }
   // 窗口全部关闭
   private onWindowAllClosed() {
