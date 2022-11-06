@@ -39,8 +39,9 @@ class Main {
     this.mainWindow = new BrowserWindow({
       width: 860,
       height: 640,
-      titleBarStyle: 'hidden',    // 隐藏窗口标题栏
-      center: true,               // 窗口剧中
+      titleBarStyle: 'hiddenInset',    // 隐藏窗口标题栏
+      center: true,               // 窗口剧中 
+      transparent: true,
       webPreferences: {
         nodeIntegration: true,    //  makes it possible to use `require` within our index.html
         preload: Path.join(__dirname, 'preload.js')

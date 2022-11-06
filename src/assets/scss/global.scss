@@ -53,3 +53,11 @@ input {
 #root {
   position: relative;
 }
+.dragable-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 20px;
+  -webkit-app-region: drag;
+}
