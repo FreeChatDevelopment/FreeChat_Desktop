@@ -13,6 +13,7 @@
     "@types/node": "^16.18.2",
     "@types/react": "^18.0.23",
     "@types/react-dom": "^18.0.7",
+    "antd": "^4.24.1",
     "ethers": "^5.7.2",
     "open-im-sdk": "^2.3.0-beta.2",
     "react": "^18.2.0",
@@ -53,6 +54,7 @@
     "cross-env": "^7.0.3",
     "dayjs": "^1.11.6",
     "electron": "^21.2.0",
+    "html2canvas": "^1.4.1",
     "sass": "^1.55.0",
     "wait-on": "^6.0.1"
   }

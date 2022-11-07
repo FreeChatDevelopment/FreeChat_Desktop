@@ -25,6 +25,4 @@ class Wallet {
   }
 }
 
-let wallet = new Wallet()
-
-export default wallet
+export default (new Wallet())

@@ -14,12 +14,29 @@ const Router: Items[] = [
     element: lazy(() => import('../views/StartPage'))
   },
   {
-    path: '/login',
+    path: 'login',
     title: '登录',
-    element: lazy(() => import('../views/Login'))
+    element: lazy(() => import('../views/Login')),
+    children: [
+      {
+        path: '',
+        title: '登录',
+        element: lazy(() => import('../views/Login/login'))
+      },
+      {
+        path:'create',
+        title: '创建账户',
+        element: lazy(() => import('../views/Login/createUser'))
+      },
+      {
+        path:'user',
+        title: '登录账户',
+        element: lazy(() => import('../views/Login/loginUser'))
+      }
+    ]
   },
   {
-    path: '/index',
+    path: 'index',
     title: 'index',
     element: lazy(() => import('../views/Index'))
   }
